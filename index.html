@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia dos Professores</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Arial', sans-serif;
+          background: linear-gradient(to bottom left, #c7b6ee, #8A2BE2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+
+        .container {
+          width: 90%;
+          border-radius: 15px;
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+          height: 90%;
+          background-image: url('./background-abc.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+
+        .left-side {
+          height: 50%;
+          width: 50%;
+          display: flex;
+          margin-top: 10%;
+          margin-left: 5%;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          background: linear-gradient(to right, #5a7878, #2F4F4F);
+          padding: 15px;
+          border-radius: 10px;
+          border: 5px solid #8B4513;
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .left-side h1 {
+          font-size: 50px;
+          background: linear-gradient(to right, #FFFFFF, #FFD700);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-bottom: 10px;
+        }
+
+        .left-side p {
+          font-size: 18px;
+          color: #FFFFFF;
+          line-height: 1.4;
+          margin-bottom: 10px;
+        }
+
+        .left-side button {
+          padding: 10px 15px;
+          background-color: #FF6F61;
+          color: white;
+          border: none;
+          border-radius: 25px;
+          font-size: 12px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+
+        .left-side button:hover {
+          background-color: #E6554F;
+        }
+
+        .audio-wrapper {
+          background: linear-gradient(to right, hsl(5, 82%, 73%), #E6554F);
+          border-radius: 10px;
+          padding: 8px;
+          margin-top: 10px;
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .audio-wrapper audio {
+          width: 100%;
+          outline: none;
+        }
+
+        .right-side {
+          width: 50%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 8%;
+        }
+
+        .right-side img {
+          width: 100%;
+          max-width: 340px;
+          height: auto;
+          border-radius: 20px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+          .container {
+            flex-direction: column;
+            padding: 10px;
+            height: auto;
+          }
+
+          .left-side, .right-side {
+            width: 100%;
+            text-align: center;
+          }
+
+          .right-side img {
+            max-width: 100%;
+            margin-top: 20px;
+          }
+
+          .left-side h1 {
+            font-size: 20px;
+          }
+
+          .left-side p {
+            font-size: 12px;
+          }
+
+          .left-side button {
+            font-size: 10px;
+            padding: 8px 12px;
+          }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <h1>Feliz Dia dos Professores!</h1>
+      <p>Celebramos hoje o trabalho incrível que nossas professoras realizam todos os dias. Obrigado por moldar mentes e inspirar corações.</p>
+      <div class="audio-wrapper">
+          <p>De o play e ouça uma mensagem especial</p>
+          <audio controls>
+            <source src="./alunos.mp3" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+          </audio>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <img src="./professoras.jpeg" alt="Ilustração do professor">
+    </div>
+  </div>
+</body>
+</html>
