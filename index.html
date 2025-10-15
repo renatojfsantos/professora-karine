@@ -144,24 +144,28 @@
 </head>
 <body>
   <div class="container">
-    <div class="left-side">
-      <h1>Feliz Dia dos Professores!</h1>
-      <p>Celebramos hoje o trabalho incrível que nossas professoras realizam todos os dias. Obrigado por moldar mentes e inspirar corações.</p>
-      <div class="audio-wrapper">
-          <p>De o play e ouça uma mensagem especial</p>
-          <audio controls>
-            <source src="./ana_liz.mp3" type="audio/mp3">
-            Seu navegador não suporta o elemento de áudio.
-          </audio>
-      </div>
-    </div>
-
-    <div class="right-side">
-      <video controls>
-        <source src="./ana_liz_cantando.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-      </video>
+  <div class="left-side" style="width: 25%;"> <!-- Reduzido para metade da largura original -->
+    <h1>Feliz Dia dos Professores!</h1>
+    <p>Celebramos hoje o trabalho incrível que nossas professoras realizam todos os dias. Obrigado por moldar mentes, inspirar corações e cuidar de mim com tanto amor. Feliz dia dos Professores!</p>
+    <div class="audio-wrapper">
+      <p>De o play e ouça uma mensagem especial</p>
+      <audio controls>
+        <source src="./ana_liz.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
     </div>
   </div>
+
+  <div class="image-container" style="width: 25%; display: flex; justify-content: center; align-items: center; padding: 10px; margin-left: 80px;">
+    <img src="./ana_liz.jpeg" alt="Ana Liz" style="width: 100%; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);">
+  </div>
+
+  <div class="right-side" style="width: 50%;"> <!-- Mantém a largura original -->
+    <video controls>
+      <source src="./ana_liz_cantando.mp4" type="video/mp4">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+  </div>
+</div>
 </body>
 </html>
